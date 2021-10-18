@@ -311,6 +311,21 @@
       <a href="javascript:;" id="theme-dark">🌛 深色</a>
       <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
     </p>
+    <script type="text/javascript">
+      var href = window.location.href; // 当前页面地址
+    
+      function handleCallback(jsonData) {
+        console.log("jsonData = " + jsonData);
+        var arrival = jsonData.arrival;
+        document.getElementById("page_view").innerHTML = arrival;
+      }
+      
+      var src = "https://106.14.152.93:8443/third/githubio/arrival?callback=handleCallback&articleUrl="
+             + href + "&ip=" + returnCitySN["cip"];
+      
+      document.write("<script type=\"text/javascript\" src=\"" + src + "\"><\/script>");
+      </script>
+    
   </div>
 </footer>
   </div>
