@@ -22,7 +22,7 @@
 
   
 
-  <title>我的博客出炉了! | 非洲阿楚的博客</title>
+  <title>初学javaScript | 非洲阿楚的博客</title>
 
   
 
@@ -96,18 +96,18 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">我的博客出炉了!</h1>
+          <h1 class="title-wrap">初学javaScript</h1>
           <h2 class="title-sub-wrap">
             <strong>lcxFZAC</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-10-17T14:09:50.000Z" itemprop="datePublished">2021-10-17</time>
+            <time  class="article-date" datetime="2021-11-05T12:23:40.000Z" itemprop="datePublished">2021-11-05</time>
           </h2>
           <ul class="wrap-list dark">
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/hexo/">🏷️ hexo</a></li>
+    <li><a href="/tags/%E9%97%B2%E6%9A%87%E5%AD%A6%E4%B9%A0/">🏷️ 闲暇学习</a></li>
   
 </ul>
         </div>
@@ -133,15 +133,35 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="博客出炉"><a href="#博客出炉" class="headerlink" title="博客出炉!"></a><h1>博客出炉!</h1></h1><p>
-</p><h2>
-捣鼓来捣鼓去,
-<br>各种奇奇怪怪的问题,
-<br>有问题就解决问题,
-<br>好不容易把博客搞好了!
-</h2>
-<p></p>
+        <h1 id="JavaScript是什么？"><a href="#JavaScript是什么？" class="headerlink" title="JavaScript是什么？"></a>JavaScript是什么？</h1><p>JavaScript是一种基于对象和事件驱动并具有安全性的解释型脚本语言，<br>可以用于编写客户端的脚本程序，由Web服务器解释执行。<br>JavaScript有自身的语法格式，也涉及数据类型、运算符、表达式、流程语言、和函数<br>等内容（数学这辈子的噩梦，函数把我摁着打）。</p>
+<hr>
+<h1 id="JavaScript的语法"><a href="#JavaScript的语法" class="headerlink" title="JavaScript的语法"></a>JavaScript的语法</h1><p>在HTML中书写JavaScript的语法格式如下：<br>内嵌式引用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=&quot;javascript&quot; runat=&quot;server&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
+<p>引用外部javascript文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;引用文件的路径&quot;&gt;</span><br><span class="line">&lt;!-- 引用外部js文件 --&gt;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>language是&lt;script&gt;标记的基本属性<br><br><br>runat=”server”表示该段脚本在服务器端执行，若省略，<br>则表示该脚本将发送至客户端运行。<br><br><br>&lt;!–  –&gt;注释标记<br><br></p>
+<h2 id="JavaScript语言区分大小写"><a href="#JavaScript语言区分大小写" class="headerlink" title="JavaScript语言区分大小写"></a>JavaScript语言区分大小写</h2><h1 id="JavaScript的书写位置"><a href="#JavaScript的书写位置" class="headerlink" title="JavaScript的书写位置"></a>JavaScript的书写位置</h1><p>JavaScript可用于body和head，<br>多次使用应将代码写成函数并放入head中，<br>此时，JavaScript函数不会在进入网页时立刻执行，<br>而是在某个事件调用的时候去执行。</p>
+<hr>
+<h1 id="JavaScript的语句"><a href="#JavaScript的语句" class="headerlink" title="JavaScript的语句"></a>JavaScript的语句</h1><h2 id="语句结束标志"><a href="#语句结束标志" class="headerlink" title="语句结束标志"></a>语句结束标志</h2><p>JavaScript用”;”表示一条语句的结束（非强制性要求），<br>但涉及到多条语句写到同一行时，<br>则要求单条语句必须以分号结束。</p>
+<h2 id="语句块"><a href="#语句块" class="headerlink" title="语句块"></a>语句块</h2><p>一组大括号”{}”内的JavaScript语句称为语句块，<br>一个语句块内的多条语句可以被当作单条语句处理。<br>语句块通常用在条件语句、循环语句或函数中。<br><br><br>条件语句—条件语句是用来判断给定的条件是否满足(表达式值是否为0)，并根据判断的结果(真或假)决定执行的语句，选择结构就是用条件语句来实现的。<br><br><br>循环语句—一组被重复执行的语句称之为循环体，能否继续重复，决定循环的终止条件。循环结构是在一定条件下反复执行某段程序的流程结构，被反复执行的程序被称为循环体。 [1]  循环语句是由循环体及循环的终止条件两部分组成的。<br><br></p>
+<p>函数—函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。<br>函数分为普通函数、方法、构造函数。<br>JavaScript 函数（函数的执行条件：case1：利用声明定义函数，那么只有在函数被调用的时候执行。case2：利用表达式定义，那么因为函数是一个表达式，因而马上执行。也就是说函数执行要么是调用，要么是程序运行到带有函数的表达式时，执行函数。）</p>
+<hr>
+<h1 id="JavaScript注释"><a href="#JavaScript注释" class="headerlink" title="JavaScript注释"></a>JavaScript注释</h1><p>单行注释：”//“<br>多行注释:”/* 注释内容 */“</p>
+<hr>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p>JavaScript有三类数据类型：<br>1、基本数据类型—数值型(Number)、字符型(String)、布尔型(Boolean)<br>2、复合数据类型—数组类型、对象类型<br>3、特殊数据类型—空数据类型(null)、未定义类型(undefined)</p>
+<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>可以是常量，也可以是变量</p>
+<h3 id="数值型"><a href="#数值型" class="headerlink" title="数值型"></a>数值型</h3><p>数值型可以是整型，也可以是浮点型<br>在java和C++中两者是不同的类型<br>但在JavaScript中数值型包含了整型和浮点型，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">num1=12.3;</span><br><span class="line">num2=0123;     //表示八进制123</span><br><span class="line">num3=0xEF;     //表示十六进制</span><br><span class="line">num4=3.5e11;   //表示3.5x10^11</span><br></pre></td></tr></table></figure>
+<p>数值型可以是十进制，八进制，十六进制，也可以是科学计数法。<br>八进制：数字前面加”0”表示八进制数。<br>十六进制:数字前面加”0x”。<br>科学计数法：3.5e11表示的是3.5x10^11（e或E都行）。</p>
+<h2 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h2><p>字符型数据是用英文双引号(“”)或单引号(‘’)括起来的零个或多个字符，<br><br></p>
+<p><strong>注意：</strong>单引号中的字符串可含有双引号，<br>双引号中的字符串也可以含有单引号，<br>但是单引号和双引号定界的字符串中不能包含同样的界定符字符串，<br>例子如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str1=&quot;a string&quot;  //双引号定界符</span><br><span class="line">str2=&#x27;a string&#x27;  //单引号定界符</span><br><span class="line">str3=&quot;a &#x27;string&#x27;&quot;  //双引号中包含单引号</span><br><span class="line">str4=&#x27;a &quot;string&quot;&#x27;  //单引号中包含双引号</span><br><span class="line">str5=&quot;a &quot;string&quot;&quot;  //错误写法（定界符中有同样的定界符）</span><br></pre></td></tr></table></figure>
+
+<h2 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h2><p>布尔型数据常用于逻辑运算，通常用于说明一种状态或表示比较的结果。<br>布尔型只有真值(true)或假值(false)两个值。<br>在javascript中可以用非0数值表示true，0表示false</p>
+<hr>
+<p>今天到此为止<br><img src="/2021/11/05/%E5%88%9D%E5%AD%A6javaScript/tp-s-2.gif" alt="学习多快乐哦"></p>
 
       </section>
 
@@ -149,20 +169,20 @@
       
         <nav class="article-nav">
           
+          
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2021/10/18/lesson1/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">lesson1</h2>
+        <a href="/2021/11/04/lesson5/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">lesson5</h2>
         </a>
       
-      <div class="card-text--row">Newer</div>
+      <div class="card-text--row">Older</div>
     </div>
   </article>
 </div>
-          
           
         </nav>
       
