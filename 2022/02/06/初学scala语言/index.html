@@ -22,7 +22,7 @@
 
   
 
-  <title>lesson2 | 非洲阿楚的博客</title>
+  <title>初学scala语言 | 非洲阿楚的博客</title>
 
   
 
@@ -96,18 +96,18 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">lesson2</h1>
+          <h1 class="title-wrap">初学scala语言</h1>
           <h2 class="title-sub-wrap">
             <strong>lcxFZAC</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-10-18T10:04:44.000Z" itemprop="datePublished">2021-10-18</time>
+            <time  class="article-date" datetime="2022-02-06T05:19:56.000Z" itemprop="datePublished">2022-02-06</time>
           </h2>
           <ul class="wrap-list dark">
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/">🏷️ 课堂笔记</a></li>
+    <li><a href="/tags/%E9%97%B2%E6%9A%87%E5%AD%A6%E4%B9%A0/">🏷️ 闲暇学习</a></li>
   
 </ul>
         </div>
@@ -133,22 +133,12 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>
-&lt;div>盒子标签
-一般网页是由多个盒子组合或叠加而成的，
-盒子使网页内容有了更强的灵活性，
-盒子有margin（外边距），border（边框），padding（内边距）三种距离属性。
-边框先设粗细，再设线条类型，然后设颜色。
-
-</p><p>&lt;form&gt;—-表单标签 通常存放input标签 用作页面输入，<br>maxlength表示最大长度，会限制input标签的输入字符的最大数量，<br>minlength同理，限制最小数量。</p>
-<p>正则表达式 可用于检验文字是否符合条件。</p>
-<p>p标签属于段落标签 一般存放文字内容 每个p标签会自动换行。</p>
-<p>&lt;input&gt;标签<br>type的种类：<br>flie—–说明是输入文件<br>radio—–单选框(选项可以不止一个 但只能选一个 所有选项的value值必填且不能相同)<br>checkbox—–多选框（可选多个选项 每个input标签name统一 value不能为空且不能重复）<br>select—–下拉框(可从下拉框中选择一个结果)<br>option—–用来表示下拉框的选项 必须有一个value值<br>textarea—–文本域标签(用来输入大量文字内容)(cols代表文本宽度 rows代表文本高度）</p>
-<p>input标签 若type=”submit” name代表这是一个提交按钮 只能点击<br>还需要给它添加一个value的属性：就是按钮的名字 name可以省略</p>
-<p>驼峰命名法—–连续的不同单词间，每个单词首字母大写的命名方法叫做驼峰命名法。</p>
-<p></p>
-
-<p><img src="/2021/10/18/lesson2/tp2.jpg" alt="学无止境"></p>
+        <h1 id="Scala是什么"><a href="#Scala是什么" class="headerlink" title="Scala是什么"></a>Scala是什么</h1><p>Scala是一门多范式语言，<br>一种纯面对对象的语言，<br>每个值都是对象，<br>同时也是函数式语言，<br>其函数可当成值使用。<br>Scala与java类似</p>
+<h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><p>Scala严格区分大小写<br>所有类名第一个字母要大写<br>多个单词构成一个类名则依据驼峰命名法<br>“def main(args: Array[String])” - Scala程序从main()方法开始处理，这是每一个Scala程序的强制程序入口部分。</p>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>单行注释:’//‘<br>多行注释:’/**/‘</p>
+<h1 id="尝试"><a href="#尝试" class="headerlink" title="尝试"></a>尝试</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//判定伤害来源，只有玩家可以造成伤害</span><br><span class="line">def damaged(x) &#123;</span><br><span class="line">            if(x.source.getType() == 4) &#123;   //判定伤害来源</span><br><span class="line">                x.damage(x.damage)   //是玩家则伤害正常</span><br><span class="line">                &#125;else&#123;</span><br><span class="line">                 x.source.damage(x.damage) //伤害反弹</span><br><span class="line">                 x.damage = 0   //不是玩家则伤害为0</span><br><span class="line">                &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>上面是按照scala写的代码<br>在语法方面和java有所不同但大体相似</p>
+<p><img src="/2022/02/06/%E5%88%9D%E5%AD%A6scala%E8%AF%AD%E8%A8%80/s1.gif" alt="tp"></p>
 
       </section>
 
@@ -156,28 +146,14 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-    <div class="card-text">
-      
-        <a href="/2021/10/18/lesson3/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">lesson3</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2021/10/18/lesson1/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">lesson1</h2>
+        <a href="/2022/01/06/lesson10/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">lesson10</h2>
         </a>
       
       <div class="card-text--row">Older</div>
