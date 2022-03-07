@@ -22,7 +22,7 @@
 
   
 
-  <title>lesson6.7.8 | 非洲阿楚的博客</title>
+  <title>MCnpc脚本学习 | 非洲阿楚的博客</title>
 
   
 
@@ -45,7 +45,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://tvax3.sinaimg.cn/large/007kZ47kgy1geim6ne6pvj30zk0n6jzh.jpg)"></div>
+    <div class="post-image" style="background-image: url(https://tva2.sinaimg.cn/large/007kZ47kly1gghcteqwktj30zk0n6hdt.jpg)"></div>
   
 
   <!-- navbar -->
@@ -96,18 +96,18 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">lesson6.7.8</h1>
+          <h1 class="title-wrap">MCnpc脚本学习</h1>
           <h2 class="title-sub-wrap">
             <strong>lcxFZAC</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-11-21T05:46:54.000Z" itemprop="datePublished">2021-11-21</time>
+            <time  class="article-date" datetime="2022-03-07T07:37:49.000Z" itemprop="datePublished">2022-03-07</time>
           </h2>
           <ul class="wrap-list dark">
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/">🏷️ 课堂笔记</a></li>
+    <li><a href="/tags/%E9%97%B2%E6%9A%87%E5%AD%A6%E4%B9%A0/">🏷️ 闲暇学习</a></li>
   
 </ul>
         </div>
@@ -133,14 +133,16 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="尝试手敲一个”学校官网”"><a href="#尝试手敲一个”学校官网”" class="headerlink" title="尝试手敲一个”学校官网”"></a>尝试手敲一个”学校官网”</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>敲代码的确是件有意思的事情，尤其是有一个目标可做的时候(逐渐理解码农为何如此”精神抖擞”)</p>
-<h2 id="一些废话"><a href="#一些废话" class="headerlink" title="一些废话"></a>一些废话</h2><p>我本以为我的习惯还算可以，但是敲完”学校官网”之后，<br>再回头看自己的代码，发现实在是乱七八糟的，<br>看起来真的。。。跟垃圾堆似的。。。</p>
-<h2 id="反省"><a href="#反省" class="headerlink" title="反省"></a>反省</h2><p>做网页之前还是得进行分析<br>大致分好要做多少层<br>对属性重复的class进行简化</p>
-<h2 id="遇到的新知识"><a href="#遇到的新知识" class="headerlink" title="遇到的新知识"></a>遇到的新知识</h2><p>css动画<br>css轮播图<br>css下拉列表</p>
-<h2 id="网页效果"><a href="#网页效果" class="headerlink" title="网页效果"></a>网页效果</h2><p><img src="/2021/11/21/lesson6-7-8/p1.jpg" alt="图片1"><br><img src="/2021/11/21/lesson6-7-8/p2.jpg" alt="图片2"><br><img src="/2021/11/21/lesson6-7-8/p3.jpg" alt="图片3"><br><img src="/2021/11/21/lesson6-7-8/p4.jpg" alt="图片4"></p>
-<h2 id="几个好用的网站"><a href="#几个好用的网站" class="headerlink" title="几个好用的网站"></a>几个好用的网站</h2><p>css动画效果（感谢室友安利）: <a target="_blank" rel="noopener" href="https://animista.net/play/basic/rotate-90/rotate-90-bottom-cw">https://animista.net/play/basic/rotate-90/rotate-90-bottom-cw</a><br>css轮播图案例（感谢老师安利）: <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/366e374e108d">https://www.jianshu.com/p/366e374e108d</a></p>
+        <h1 id="尝试制作判断攻击对象是否为玩家而改变伤害量的脚本"><a href="#尝试制作判断攻击对象是否为玩家而改变伤害量的脚本" class="headerlink" title="尝试制作判断攻击对象是否为玩家而改变伤害量的脚本"></a>尝试制作判断攻击对象是否为玩家而改变伤害量的脚本</h1><p>最近开始学习如何在mc里面写npcmod的脚本<br>于是开始尝试书写判断攻击对象的脚本<br>目标效果:攻击对象为玩家，伤害量为1，攻击对象非玩家，伤害量为1000<br><img src="/2022/03/07/MCnpc%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0/npcatk.png" alt="atk"></p>
+<h2 id="npcmod官方文档"><a href="#npcmod官方文档" class="headerlink" title="npcmod官方文档"></a>npcmod官方文档</h2><p><a target="_blank" rel="noopener" href="http://www.kodevelopment.nl/minecraft/customnpcs/scripting">http://www.kodevelopment.nl/minecraft/customnpcs/scripting</a></p>
+<h2 id="该脚本所用到的方法"><a href="#该脚本所用到的方法" class="headerlink" title="该脚本所用到的方法"></a>该脚本所用到的方法</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">getAttackTarget() //获取攻击对象</span><br><span class="line">getType()  //获取类型</span><br><span class="line">setMeleeStrength()  //设置近战攻击伤害</span><br><span class="line">isAttacking()  //是否处于攻击状态</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#判断攻击目标而改变伤害量，此判定放入攻击区</span><br><span class="line">a = npc.getAttackTarget().getType()</span><br><span class="line">if (a == 1):</span><br><span class="line">    npc.setMeleeStrength(1) #目标为玩家，伤害为1</span><br><span class="line">else:</span><br><span class="line">    npc.setMeleeStrength(1000) #目标非玩家，伤害为1k</span><br><span class="line"></span><br><span class="line">#由于该脚本在攻击后进行判断，所以还需脱战判定，否则下一次攻击伤害量会继承,此判定放至更新区</span><br><span class="line">if npc.isAttacking() == 0:</span><br><span class="line">    npc.setMeleeStrength(1)  #若判定脱战，则伤害量变回1</span><br></pre></td></tr></table></figure>
+
+<h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><p>可正常运行</p>
+<h2 id="小插曲"><a href="#小插曲" class="headerlink" title="小插曲"></a>小插曲</h2><p>刚开始由于不知道如何获取攻击对象的数据而绕了很多弯路<br>而第一次写好判断后，又发现因为是先攻击再判定，所以下一次攻击<br>会继承上一次攻击判定后所修改的伤害值，于是多写了一段代码</p>
 <hr>
-<p><img src="/2021/11/21/lesson6-7-8/tp6.png" alt="图片"></p>
+<p><img src="/2022/03/07/MCnpc%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0/script.jpg" alt="npc"></p>
 
       </section>
 
@@ -148,32 +150,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://tvax3.sinaimg.cn/large/007kZ47kgy1geim6epv26j30zk0n6gyh.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2022/01/06/lesson9/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">lesson9</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://tvax2.sinaimg.cn/large/007kZ47kly1gghctacx0jj30zk0n64qp.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="https://tvax1.sinaimg.cn/large/007kZ47kly1gfqx66m33yj30zk0n64fv.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2021/11/17/%E5%88%9D%E5%AD%A6python/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">初学python</h2>
+        <a href="/2022/03/06/%E6%8A%9B%E5%BC%82/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">抛异</h2>
         </a>
       
       <div class="card-text--row">Older</div>
