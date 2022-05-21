@@ -133,8 +133,36 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="函数是什么？"><a href="#函数是什么？" class="headerlink" title="函数是什么？"></a>函数是什么？</h1><p>函数是组织好的，可重复使用的，用来实现单一，或相关联功能的代码段。<br>函数就像是一个加装模块，内部实现或许十分复杂，但是使用起来很简洁。<br>python自带的函数，例如print()或者round()<br>也可以用def 函数名():自定义函数进行调用</p>
-<h1 id="如何速查函数的功能"><a href="#如何速查函数的功能" class="headerlink" title="如何速查函数的功能"></a>如何速查函数的功能</h1><p>1.网上直接搜<br>2.打开cmd，进入python，输入help(函数名),回车，python就会将该函数的相关功能打印<br>(敲击回车可进行翻页)</p>
+        <h1 id="函数是什么？"><a href="#函数是什么？" class="headerlink" title="函数是什么？"></a>函数是什么？</h1><p>函数是组织好的，可重复使用的，用来实现单一，或相关联功能的代码段。<br>函数就像是一个加装模块，内部实现或许十分复杂，但是使用起来很简洁。<br>python自带的函数，例如print()或者round()</p>
+<h2 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h2><p>定义方法:<br>def 函数名(参数名):<br>    代码块</p>
+<p>调用方法:<br>函数名(参数)</p>
+<h2 id="形参与实参"><a href="#形参与实参" class="headerlink" title="形参与实参"></a>形参与实参</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def num(a,b): #定义了一个叫num的函数，在圆括号内定义了参数，此处的参数为形参</span><br><span class="line">    n = a+b  #在python中，参数属于对象，变量没有类型,数据的类型会根据赋值的情况改变</span><br><span class="line">    print(n)</span><br><span class="line"></span><br><span class="line">num(1,2)    #调用函数时，括号内的参数为实参</span><br></pre></td></tr></table></figure>
+<p>上面的代码中，定义时的a,b为形参，调用时的a,b为实参<br>注意：在调用函数时，一定要注意该函数所接收的参数要求是什么类型的参数(传入的参数数据类型不符合会导致报错)</p>
+<h3 id="形参的三种类型参数"><a href="#形参的三种类型参数" class="headerlink" title="形参的三种类型参数"></a>形参的三种类型参数</h3><p>1.必备参数：函数中必须传递的参数。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def num(a,b): </span><br><span class="line">    n = a+b  #函数中需要用到a,b,所以在调用函数时必须有传入值</span><br><span class="line">    print(n)</span><br><span class="line"></span><br><span class="line">num(1,2)    #传入2个实参，分别是a,b</span><br></pre></td></tr></table></figure>
+<p>函数中若有无定值的变量，则需要传入对应的值<br>此时的形参为必备参数。</p>
+<p>2.默认参数：具有默认值的参数，若不传入则为默认值。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def num(a,b=10):  #给b赋予了初始值</span><br><span class="line">    n = a+b  </span><br><span class="line">    print(n)</span><br><span class="line"></span><br><span class="line">num(1)   #因为b为默认参数，a为必备参数，只传入一个值，传递到a，函数也可以运行</span><br></pre></td></tr></table></figure>
+<p>上述代码的运行结果为11<br>因为a为必备参数，所以至少传入一个值<br>而b为默认参数，在没有传入值的情况下<br>b的值为默认值10，所以函数运行结果为11</p>
+<p>3.不定长参数:不定长参数分为*args和**kwargs<br>args是arguments的缩写,kw是key word的简写<br>*为python语法规定，作用是对元组或列表的打包操作<br>不定长函数可以传入零个或多个值，适用于不确定传入值数量的情况<br>例如:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#*args</span><br><span class="line">def prt1(*args):</span><br><span class="line">    print(args)  #注意:此处不需要*</span><br><span class="line">prt1(*(1,2,3))  #同上，此处是用*()先组成列表再拆包传入</span><br><span class="line">prt1(1,2,3)  #正常传入</span><br></pre></td></tr></table></figure>
+<p>两次打印的结果都为列表的(1,2,3)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#**kwargs</span><br><span class="line">def prt(**kwargs):</span><br><span class="line">    print(kwargs)  #注意:此处不需要**</span><br><span class="line">prt(a=1,b=2,c=3)  #正常传入</span><br><span class="line">prt(**&#123;&#x27;a&#x27;:1,&#x27;b&#x27;:2,&#x27;c&#x27;:3&#125;)  </span><br><span class="line">#可以直接传入多个参数，以字典形式进行保存，或者用**&#123;&#125;的形式拆包传入</span><br></pre></td></tr></table></figure>
+<p>两次打印结果都为字典的{‘a’: 1, ‘b’: 2, ‘c’: 3}</p>
+<h2 id="实参的两种类型参数"><a href="#实参的两种类型参数" class="headerlink" title="实参的两种类型参数"></a>实参的两种类型参数</h2><p>1.位置参数:该参数按照位置循序传递<br>2.关键字参数:该参数可以利用关键字进行传递</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def num(a,b):  #a,b为位置参数</span><br><span class="line">    n = a+b  </span><br><span class="line">    print(n)</span><br><span class="line"></span><br><span class="line">num(1,b=2)   #b为关键字参数</span><br></pre></td></tr></table></figure>
+
+<h2 id="无参"><a href="#无参" class="headerlink" title="无参"></a>无参</h2><p>无参就是没有参数<br>无参函数中可以不传入参数<br>例如</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def p():</span><br><span class="line">    print(&quot;我是一个无参函数&quot;)</span><br><span class="line">p()</span><br></pre></td></tr></table></figure>
+
+<h2 id="匿名参数"><a href="#匿名参数" class="headerlink" title="匿名参数"></a>匿名参数</h2><p>匿名函数的用法：变量名 = lambda 形参:表达式<br>例如:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = lambda a,b:a*b  #冒号前的是形参，冒号后的是表达式</span><br><span class="line">print(x(2,4))  #x虽有返回值但无法显示，需要用print</span><br></pre></td></tr></table></figure>
+<p>匿名函数的特点：不需要return，表达式本身即是返回值;直接赋值变量即可调用，<br>优点:简单快捷<br>缺点：没法写得太过复杂</p>
+<h2 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h2><p>递归函数的特点：函数调用函数本身或者内部的函数，数据会因递归一分为二<br>相邻的两次数据之间关系紧密(前一次的输出为后一次的输入)</p>
+<p>递归函数的优点：递归函数定义简单，逻辑清晰，比起在函数中定义两个变量进行运算，递归明显简单了许多；<br>递归函数的缺点：递归效率不高<br>使用递归函数的注意点：1.必须有明确的结束条件；2.规模递减(每次递归的计算量要比上一次更小)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#举例(求和1~100)</span><br><span class="line">def sum(n):</span><br><span class="line">    if n&gt;0:</span><br><span class="line">        return n+sum(n-1)  #自我调用</span><br><span class="line">    else:</span><br><span class="line">        return 0  </span><br><span class="line">print(sum(100))</span><br></pre></td></tr></table></figure>
+
+<h2 id="如何速查函数的功能"><a href="#如何速查函数的功能" class="headerlink" title="如何速查函数的功能"></a>如何速查函数的功能</h2><p>1.网上直接搜<br>2.打开cmd，进入python，输入help(函数名),回车，python就会将该函数的相关功能打印<br>(敲击回车可进行翻页)</p>
 <h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>python的顺序结构不能忽略<br>自定义函数需要先定义后调用</p>
 <h2 id="函数笔记"><a href="#函数笔记" class="headerlink" title="函数笔记"></a>函数笔记</h2><p><img src="/2022/03/18/python-%E5%87%BD%E6%95%B0/defNote.png" alt="note"><br>感觉有点水，但是思维导图做笔记真的很爽<br><img src="/2022/03/18/python-%E5%87%BD%E6%95%B0/le.jpg" alt="happy"></p>
 
