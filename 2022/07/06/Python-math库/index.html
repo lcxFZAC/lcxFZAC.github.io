@@ -22,7 +22,7 @@
 
   
 
-  <title>面向对象 | 非洲阿楚的博客</title>
+  <title>Python---math库 | 非洲阿楚的博客</title>
 
   
 
@@ -45,7 +45,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://tva2.sinaimg.cn/large/007kZ47kly1gh9eg4xkq4j30zk0n6th2.jpg)"></div>
+    <div class="post-image" style="background-image: url(https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/007kZ47kly1gfqx68f57tj30zk0n613k.jpg)"></div>
   
 
   <!-- navbar -->
@@ -96,11 +96,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">面向对象</h1>
+          <h1 class="title-wrap">Python---math库</h1>
           <h2 class="title-sub-wrap">
             <strong>lcxFZAC</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-03-23T09:13:03.000Z" itemprop="datePublished">2022-03-23</time>
+            <time  class="article-date" datetime="2022-07-06T06:41:56.000Z" itemprop="datePublished">2022-07-06</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -133,36 +133,89 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><p>面向对象，最重要的便是”对象”二字，编写的代码，核心在于对象。<br>对象便是现实世界中的事物在计算机世界中的映射。<br>要获取的对象是什么？要作用于什么对象？<br>这都是编写代码中要考虑到的问题？<br>就像做功一样，不能做无用功。<br>只有真正面向对象了，代码才会有意义。</p>
-<h1 id="面向对象的三大特性"><a href="#面向对象的三大特性" class="headerlink" title="面向对象的三大特性"></a>面向对象的三大特性</h1><p>1.继承性—子类继承父类属性。<br>2.封装性—较为抽象，具体看个人理解，例如类就具有封装性。<br>3.多态性—同一段代码或方法等等，具有多种作用(一把工具多种用途，好比瑞士军刀，工兵铲)。</p>
-<h1 id="类"><a href="#类" class="headerlink" title="类"></a>类</h1><p>使用class来定义类</p>
-<h2 id="命名规则—类"><a href="#命名规则—类" class="headerlink" title="命名规则—类"></a>命名规则—类</h2><p>类的命名规则中<br>第一个字母建议大写<br>不建议使用下划线进行单词连接</p>
-<h2 id="类的作用"><a href="#类的作用" class="headerlink" title="类的作用"></a>类的作用</h2><p>封装代码，以便编程时进行调用</p>
-<h2 id="类—内部可操作项目"><a href="#类—内部可操作项目" class="headerlink" title="类—内部可操作项目"></a>类—内部可操作项目</h2><p>1.可定义若干变量<br>2.定义函数</p>
-<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>类只负责描述，不负责执行<br>禁止在类的内部调用函数，执行代码</p>
-<h2 id="成员的可见性"><a href="#成员的可见性" class="headerlink" title="成员的可见性"></a>成员的可见性</h2><p>类分内外部，内部访问和外部访问各有区别。<br>内部调用—在方法内部调用类中的变量<br>外部调用—从外部通过对象调用类中的变量<br>成员的可见性分私有(private)和公开(public)两种状态<br>公开状态的变量和方法可以直接从外部访问或赋值<br>私有状态的变量和方法无法从外部直接干涉<br>python公开转私有的方法：在前面加上双下划线(__)</p>
-<h2 id="数据的安全性"><a href="#数据的安全性" class="headerlink" title="数据的安全性"></a>数据的安全性</h2><p>使用内部方法修改内部的变量比直接在外部修改要安全<br>因为我们可以在内部方法中加入限制<br>而外部修改则为直接修改<br>故建议使用内部方法来修改一个类的特征值</p>
-<h2 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h2><p>例子:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#定义一个类Test</span><br><span class="line">class Test():</span><br><span class="line">    a = 1</span><br><span class="line">    b = &#x27;&#x27;</span><br><span class="line">    def c():</span><br><span class="line">        pass</span><br><span class="line"></span><br><span class="line">x = Test()  #定义变量</span><br><span class="line">x.c()  #调用Test里面的方法c</span><br></pre></td></tr></table></figure>
-<p>具体的调用实例可以看前面写过的npc脚本的例子<br>需要注意的是<br>1.方法是否属于类<br>2.类是否能作用于对象</p>
-<h2 id="self关键字"><a href="#self关键字" class="headerlink" title="self关键字"></a>self关键字</h2><p>在函数中，可以直接调用内部的变量<br>而在类中不行，需要用到self关键字进行调用<br>self只和对象有关，和类无关(self代表的是实例)<br>例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class Name:</span><br><span class="line">    name = &#x27;&#x27;  #定义了变量(但并非全局变量)</span><br><span class="line">    def name(self):</span><br><span class="line">        print(&#x27;name:&#x27;+self.name)  #使用了self关键字将类中的name调用</span><br><span class="line"></span><br><span class="line">Name.name(self)  #调用Name类中的name方法</span><br></pre></td></tr></table></figure>
-<p>PS:self可变,严格来说算不上关键字(因为关键字一般不可改变)</p>
-<h2 id="super关键字"><a href="#super关键字" class="headerlink" title="super关键字"></a>super关键字</h2><p>作用：调用父类的数据</p>
-<h2 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h2><p>@classmethod—装饰器<br>类方法的特点：在方法上一行有装饰器，类方法只和类有关，与对象无关。</p>
-<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>静态方法的装饰器---@staticmethod<br>类和对象都可以调用静态方法<br>静态方法可以访问类变量</p>
-<h2 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h2><p>在类中构筑方法，必定要加第一个参数self(该参数可改变，但意义不变)<br>PS:self和this十分类似</p>
-<h3 id="实例方法与普通方法的区别"><a href="#实例方法与普通方法的区别" class="headerlink" title="实例方法与普通方法的区别"></a>实例方法与普通方法的区别</h3><p>1.调用的不同：构造函数的调用是通过类后面的括号调用；普通方法的调用是通过对象调用的。<br>2.意义的不同：实例方法主要用于描述类的行为；而构造函数主要用于初始化类的各种特征。</p>
-<h2 id="方法与函数的区别—个人理解"><a href="#方法与函数的区别—个人理解" class="headerlink" title="方法与函数的区别—个人理解"></a>方法与函数的区别—个人理解</h2><p>方法和函数很类似,<br>但是也有区别,<br>个人认为:<br>方法更像是工具(手动实现所要的结果),<br>而函数更像是机器(将参数丢进去，由内部处理后，输出加工完毕的结果).<br>当我们使用函数的时候,<br>我们只需要将参数输入便有结果输出.<br>而当我们使用方法时,<br>需要先确认所用的方法是否属于对应的类，<br>在确认我们的”对象”是否属于该类。<br>对象是主体，<br>类是连接两者的桥梁，包裹对象和方法，<br>方法是实现手段，<br>例如：<br>学生A—对象<br>学生类(包含着写作业)—类<br>写作业—方法<br>学生A写作业<br>其中主体执行方法，类创建了对象，包含了方法，从而将两者连接。</p>
-<h2 id="类中变量的机制"><a href="#类中变量的机制" class="headerlink" title="类中变量的机制"></a>类中变量的机制</h2><p>与全局变量局部变量的关系不同<br>在类中，变量有专门的机制<br>分为类变量和实例变量</p>
-<h3 id="类变量"><a href="#类变量" class="headerlink" title="类变量"></a>类变量</h3><p>定义：和类相关的变量<br>特点：与具体的对象无关</p>
-<h3 id="实例变量"><a href="#实例变量" class="headerlink" title="实例变量"></a>实例变量</h3><p>定义：和对象相关的变量<br>对象由类创建<br>访问实例变量时需要在前面加上self.</p>
-<h3 id="保存对象的特征值"><a href="#保存对象的特征值" class="headerlink" title="保存对象的特征值"></a>保存对象的特征值</h3><p>格式: self.变量名 = xxx</p>
-<h3 id="一张神奇的理解图"><a href="#一张神奇的理解图" class="headerlink" title="一张神奇的理解图"></a>一张神奇的理解图</h3><p><img src="/2022/03/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/wt.jpg" alt="wt"></p>
-<h3 id="继承性理解思维导图"><a href="#继承性理解思维导图" class="headerlink" title="继承性理解思维导图"></a>继承性理解思维导图</h3><p><img src="/2022/03/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/jcx.png" alt="jcx"></p>
-<h3 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h3><p><img src="/2022/03/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/object.png" alt="note"><br>因为最后退出的时候忘记保存了，所以笔记是半成品，还是得搭配着文章看qwq</p>
+        <h1 id="math库"><a href="#math库" class="headerlink" title="math库"></a>math库</h1><p>math库是python的标准库之一，当然，不仅仅是python，其他语言中也可能会有math库，因为这些模块的本质是提供对C标准定义的数学函数的访问。</p>
+<h2 id="math库的作用"><a href="#math库的作用" class="headerlink" title="math库的作用"></a>math库的作用</h2><p>一些简单运算不需要用到math库也能实现,但涉及到一些复杂运算时，就很有必要使用标准库提供的函数来辅助计算了。例如开平方根，计算三角函数等等。虽然可以通过代码实现，但是效率不如直接引用math库。</p>
+<p>注意:若需计算复数，需使用<code>cmath</code>库。</p>
+<h2 id="math库的几个常用函数"><a href="#math库的几个常用函数" class="headerlink" title="math库的几个常用函数"></a>math库的几个常用函数</h2><table>
+<thead>
+<tr>
+<th>函数名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>math.</code>ceil(<em>x</em>)</td>
+<td>返回 <em>x</em> 的向上取整，即大于或等于 <em>x</em> 的最小的整数。</td>
+</tr>
+<tr>
+<td><code>math.</code>fabs(<em>x</em>)</td>
+<td>返回 <em>x</em> 的绝对值。</td>
+</tr>
+<tr>
+<td><code>math.</code>factorial(<em>x</em>)</td>
+<td>以一个整数返回 <em>x</em> 的阶乘。</td>
+</tr>
+<tr>
+<td><code>math.</code>floor(<em>x</em>)</td>
+<td>返回 <em>x</em> 的向下取整。</td>
+</tr>
+<tr>
+<td><code>math.</code>exp(<em>x</em>)</td>
+<td>返回 <em>e</em> 次 <em>x</em> 幂，其中 <em>e</em> = 2.718281… 是自然对数的基数。</td>
+</tr>
+<tr>
+<td><code>math.</code>log(<em>x</em>[, <em>base</em>])</td>
+<td>使用一个参数，返回 <em>x</em> 的自然对数（底为 <em>e</em> ）。使用两个参数，返回给定的 <em>base</em> 的对数 <em>x</em> ，计算为 <code>log(x)/log(base)</code> 。</td>
+</tr>
+<tr>
+<td><code>math.</code>sin(<em>x</em>)</td>
+<td>返回以弧度为单位的 <em>x</em> 的正弦值。 结果范围在 <code>-pi/2</code> 到 <code>pi/2</code> 之间。</td>
+</tr>
+<tr>
+<td><code>math.</code>cos(<em>x</em>)</td>
+<td>返回以弧度为单位的 <em>x</em> 的余弦值。 结果范围在 <code>0</code> 到 <code>pi</code> 之间。</td>
+</tr>
+<tr>
+<td><code>math.</code>tan(<em>x</em>)</td>
+<td>返回以弧度为单位的 <em>x</em> 的正切值。 结果范围在 <code>-pi/2</code> 到 <code>pi/2</code> 之间。</td>
+</tr>
+<tr>
+<td><code>math.</code>degrees(<em>x</em>)</td>
+<td>将角度 <em>x</em> 从弧度转换为度数。</td>
+</tr>
+<tr>
+<td><code>math.</code>radians(<em>x</em>)</td>
+<td>将角度 <em>x</em> 从度数转换为弧度。</td>
+</tr>
+</tbody></table>
+<h2 id="math库中的常量"><a href="#math库中的常量" class="headerlink" title="math库中的常量"></a>math库中的常量</h2><table>
+<thead>
+<tr>
+<th>常量名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pi</td>
+<td>数学常数 <em>π</em> = 3.141592…</td>
+</tr>
+<tr>
+<td>e</td>
+<td>数学常数 <em>e</em> = 2.718281…</td>
+</tr>
+<tr>
+<td>tau</td>
+<td>数学常数 <em>τ</em> = 6.283185…</td>
+</tr>
+</tbody></table>
+<h2 id="简单实战"><a href="#简单实战" class="headerlink" title="简单实战"></a>简单实战</h2><p>本次实战内容是在<code>MineCraft</code>中使用<code>npcmod</code>脚本画圆。</p>
+<p>代码如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#简单画圆实验---放置于对话区</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cir</span>(<span class="params">dot,r</span>):</span> <span class="comment">#画圆函数，传入玩家坐标和半径</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">360</span>,<span class="number">5</span>):</span><br><span class="line">        rad = i*math.pi/<span class="number">180</span>  <span class="comment">#计算弧度</span></span><br><span class="line">        <span class="comment">#生成火焰粒子，y不变，只改变x和z</span></span><br><span class="line">        world.spawnParticle(<span class="string">&quot;flame&quot;</span>,math.cos(rad)*r+xyz[<span class="number">0</span>],xyz[<span class="number">1</span>],math.sin(rad)*r+xyz[<span class="number">2</span>],<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">2</span>) </span><br><span class="line"></span><br><span class="line">xyz = [player.getX(),player.getY(),player.getZ()]  </span><br><span class="line">cir(xyz,<span class="number">3</span>)  <span class="comment">#调用画圆函数,第一个参数是坐标数组，第二个参数是半径</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如图</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20220706153147965.png" alt="image-20220706153147965"></p>
 <hr>
-<p><img src="/2022/03/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/bl.jpg" alt="qwq"></p>
+<p><img src="/2022/07/06/Python-math%E5%BA%93/jw.jpg" alt="jw"></p>
 
       </section>
 
@@ -170,32 +223,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://tva3.sinaimg.cn/large/007kZ47kly1gh9eioomb1j30zk0n613m.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2022/03/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">正则表达式</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://tvax3.sinaimg.cn/large/007kZ47kly1gh9eg5b9y1j30zk0n67lx.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="https://tvax4.sinaimg.cn/large/007kZ47kly1gf4o9kdav2j30zk0n6dub.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2022/03/18/python-%E5%87%BD%E6%95%B0/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">python---函数</h2>
+        <a href="/2022/05/22/%E6%95%B0%E7%BB%84/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">数组</h2>
         </a>
       
       <div class="card-text--row">Older</div>
