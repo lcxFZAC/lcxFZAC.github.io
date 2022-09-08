@@ -22,7 +22,7 @@
 
   
 
-  <title>lesson5 | 非洲阿楚的博客</title>
+  <title>数组 | 非洲阿楚的博客</title>
 
   
 
@@ -45,7 +45,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://tva3.sinaimg.cn/large/007kZ47kgy1geim6oigo7j30zk0n67ds.jpg)"></div>
+    <div class="post-image" style="background-image: url(https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/007kZ47kly1gfqx679y0rj30zk0n6amf.jpg)"></div>
   
 
   <!-- navbar -->
@@ -96,18 +96,18 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">lesson5</h1>
+          <h1 class="title-wrap">数组</h1>
           <h2 class="title-sub-wrap">
             <strong>lcxFZAC</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-11-04T14:18:31.000Z" itemprop="datePublished">2021-11-04</time>
+            <time  class="article-date" datetime="2022-08-13T14:00:11.000Z" itemprop="datePublished">2022-08-13</time>
           </h2>
           <ul class="wrap-list dark">
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/">🏷️ 课堂笔记</a></li>
+    <li><a href="/tags/JAVA/">🏷️ JAVA</a></li>
   
 </ul>
         </div>
@@ -133,13 +133,54 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="练习课"><a href="#练习课" class="headerlink" title="练习课"></a>练习课</h1><p>本节课主要是对前面的知识点进行一个总结归纳和运用，<br>故无太多新知识点</p>
-<hr>
-<h2 id="Iframe"><a href="#Iframe" class="headerlink" title="Iframe"></a>Iframe</h2><p>Iframe标签<br>嵌套页面标签<br>可以将目标网页以窗口形式嵌于当前网页中<br>可制造出交互式网页体验（个人理解）<br>配合div使用效果更佳<br>效果如下：</p>
-<h2 id><a href="#" class="headerlink" title></a><img src="/2021/11/04/lesson5/qiantao.png" alt="嵌套网页"></h2><h2 id="鼠标置于图片上方出现文字（hover）"><a href="#鼠标置于图片上方出现文字（hover）" class="headerlink" title="鼠标置于图片上方出现文字（hover）"></a>鼠标置于图片上方出现文字（hover）</h2><p>img可以直接设置title属性进行文字显示<br>或者用hover对相应元素进行设置</p>
-<hr>
-<h2 id="几个好用的网站（感谢舍友）"><a href="#几个好用的网站（感谢舍友）" class="headerlink" title="几个好用的网站（感谢舍友）"></a>几个好用的网站（感谢舍友）</h2><p>图标素材网站（阿里巴巴矢量图库）:<a target="_blank" rel="noopener" href="https://www.iconfont.cn/">https://www.iconfont.cn/</a><br>RGB颜色对照表:<a target="_blank" rel="noopener" href="https://tool.oschina.net/commons?type=3">https://tool.oschina.net/commons?type=3</a></p>
-<p><img src="/2021/11/04/lesson5/tp5.jpg" alt="今天也是被卷的一天呢"></p>
+        <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>数组(array)是一种用于存储多个同类型数据的存储模型。</p>
+<h3 id="数组的定义格式"><a href="#数组的定义格式" class="headerlink" title="数组的定义格式"></a>数组的定义格式</h3><p>格式一:数据类型 [ ] 变量名</p>
+<p>格式二:数据类型 变量名[ ]</p>
+<p>推荐使用格式一进行定义</p>
+<h2 id="数组的动态初始化"><a href="#数组的动态初始化" class="headerlink" title="数组的动态初始化"></a>数组的动态初始化</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>JAVA中的数组必须先初始化才能使用</p>
+<p>初始化—为数组中的数组元素分配内存空间，并为数组中每个数组元素赋值</p>
+<h3 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h3><p>动态初始化:初始化时只指定数组长度，由系统分配数组初始值</p>
+<p>格式: 数据类型 [ ] 变量名 = new 数据类型[数组长度];</p>
+<h2 id="数组元素访问"><a href="#数组元素访问" class="headerlink" title="数组元素访问"></a>数组元素访问</h2><h3 id="方式-1"><a href="#方式-1" class="headerlink" title="方式"></a>方式</h3><p>数组访问方式—-格式:数组名</p>
+<p>数组内元素的访问方式—格式:数组名[索引]</p>
+<p>注意:数组中索引从0开始计算</p>
+<h2 id="内存分配"><a href="#内存分配" class="headerlink" title="内存分配"></a>内存分配</h2><p>JAVA程序在运行时，需在内存中分配空间，为了提高运行效率，会对空间进行区域划分，并对每片区域有特点的处理数据方式和内存管理方式。</p>
+<p>详细讲解(黑马程序员JAVA教程):<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18J411W7cE?p=61&amp;vd_source=a789e29fce38ea583e9a200db46a7a77">https://www.bilibili.com/video/BV18J411W7cE?p=61&amp;vd_source=a789e29fce38ea583e9a200db46a7a77</a></p>
+<h3 id="栈内存"><a href="#栈内存" class="headerlink" title="栈内存"></a>栈内存</h3><p>存储局部变量</p>
+<p>定义在方法中的变量</p>
+<p>使用完毕时会立刻消失</p>
+<h3 id="堆内存"><a href="#堆内存" class="headerlink" title="堆内存"></a>堆内存</h3><p>存储new出来的内容(实体、对象)</p>
+<p>数组初始化时会为储存空间添加默认值</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>初始值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>整数</td>
+<td>0</td>
+</tr>
+<tr>
+<td>浮点数</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>布尔</td>
+<td>false</td>
+</tr>
+<tr>
+<td>字符</td>
+<td>空字符</td>
+</tr>
+<tr>
+<td>引用数据类型</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<p>每new一个新东西都会给一个地址值</p>
+<p>使用完毕后在垃圾回收器空闲时被删除</p>
 
       </section>
 
@@ -150,12 +191,12 @@
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://tva4.sinaimg.cn/large/007kZ47kly1gh9eg4bz3rj30zk0n6n6s.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/007kZ47kgy1geim6fpq2cj30zk0n6afw.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2021/11/05/%E5%88%9D%E5%AD%A6javaScript/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">初学javaScript</h2>
+        <a href="/2022/09/07/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F~1/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">插件开发日记---中土版饥饿游戏-1</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -167,12 +208,12 @@
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://tvax4.sinaimg.cn/large/007kZ47kgy1geim6gqgzpj30zk0n6tji.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/007kZ47kly1gfqx69b85gj30zk0n6wpy.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2021/10/28/lesson4/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">lesson4</h2>
+        <a href="/2022/08/06/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CNPC%E8%84%9A%E6%9C%AC-%E7%94%BB%E4%B8%AA%E7%90%83/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">我的世界NPC脚本---画个球</h2>
         </a>
       
       <div class="card-text--row">Older</div>
