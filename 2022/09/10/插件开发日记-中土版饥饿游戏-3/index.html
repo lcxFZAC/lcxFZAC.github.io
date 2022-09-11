@@ -22,7 +22,7 @@
 
   
 
-  <title>message | 非洲阿楚的博客</title>
+  <title>插件开发日记---中土饥饿游戏-3 | 非洲阿楚的博客</title>
 
   
 
@@ -43,9 +43,9 @@
   <div class="root-container">
     
 <!-- header container -->
-<header class="header-container">
+<header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/bg.jpg)"></div>
+    <div class="post-image" style="background-image: url(https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/007kZ47kly1gf4o9kpf9aj30zk0n67hs.jpg)"></div>
   
 
   <!-- navbar -->
@@ -93,51 +93,119 @@
 
   
   
-
-  
-  
     <div class="header-content">
-      <div class="post-text layout-block layout-padding">
-        <h1 class="title-wrap">message</h1>
-        
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">插件开发日记---中土饥饿游戏-3</h1>
+          <h2 class="title-sub-wrap">
+            <strong>lcxFZAC</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2022-09-10T05:05:44.000Z" itemprop="datePublished">2022-09-10</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E9%97%B2%E6%9A%87%E5%AD%A6%E4%B9%A0/">🏷️ 闲暇学习</a></li>
+  
+</ul>
+        </div>
       </div>
     </div>
+  
+
+  
   
   
   
 
 </header>
 
-    <!-- 分页(其他自定义页面) -->
+    <!-- 文章 -->
 
-<!-- 自定义页面 -->
-
+<!-- 文章内容 -->
 <div class="body-container">
   <article class="content-container layout-block post-container">
     <div class="article-info">
       
+      
+      
+      
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>中秋快乐，昨日鸽了一日，保守复变函数折磨，今日中秋节，班里搞活动，估计今天也做不了太多东西，就先把地图的底子做一下吧。</p>
+<h2 id="今日任务—生成地图-基本框架"><a href="#今日任务—生成地图-基本框架" class="headerlink" title="今日任务—生成地图(基本框架)"></a>今日任务—生成地图(基本框架)</h2><p>首先小游戏的地图应该用虚空世界，将地图单独做出</p>
+<p>步骤还算简单</p>
+<p>1.打开单人游戏，生成一个世界</p>
+<p>2.选项中把难度调至和平，预设调为0</p>
+<p>3.进入该世界后，已经是虚空世界，使用/setblock指令做一个小型基底</p>
+<p>4.退出游戏，将地图文件夹保存</p>
+<p>一张虚空世界的地图就做好了(由于太简单，就没截图)</p>
+<p>那么接下来就是将地图存档放入服务器world文件夹中</p>
+<p>然后进入服务器</p>
+<p>使用mv(Multiverse-Core 一款多世界管理插件)插件载入我们的存档</p>
+<p>载入完毕后</p>
+<p>使用we(创世神)插件对基底进行扩张</p>
+<p>因为由于我设置的参数太大，导致服务器崩了好几次。。。</p>
+<p>最后扩张的地基因为崩服也是缺了几块，而且中心点不再是x:0,z:0</p>
+<p>没办法。。。破罐破摔。。。手动修一修</p>
+<p>修复完毕后再用we铺上两层草方块，围上基岩作为边界(1.7.10没有世界边界，只能这样凑合了)</p>
+<p>最后成品如下</p>
+<p><img src="/2022/09/10/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-3/jl.png"></p>
+<p>这是角落的截图(由于服务器视距限制，没法拍完)</p>
+<p><img src="/2022/09/10/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-3/map.png"></p>
+<p>地图框架截图如上(we因为服务器崩溃了之后没生成完方块我可以理解，但是居然连正方形都不是。。。)</p>
+<hr>
+<h2 id="后续任务"><a href="#后续任务" class="headerlink" title="后续任务"></a>后续任务</h2><p>1.继续观看插件开发课程，进一步学习相关知识</p>
+<p>2.制作匹配机制</p>
+<p>3.背包数据分离</p>
+<p>4.奖励机制制作</p>
+<p>5.研究地图初始化</p>
+<p>6.研究如何随机生成道具箱子</p>
+<p>7.研究如何存储玩家原坐标(游戏结束后将玩家传送回原地)</p>
+<p>8.寻找建筑师</p>
+<hr>
+<p>今日就到这边</p>
+<p><img src="/2022/09/10/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-3/my.jpg"></p>
+
       </section>
 
       
       
-
-      
-      
-        <section class="page-message-container layout-padding">
+        <nav class="article-nav">
           
-
-
-  
-  
-
-  
-  
-
-
-        </section>
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/007kZ47kly1gfqx6atos7j30zk0n6gxx.jpg"></div>
+    
+    <div class="card-text">
       
+        <a href="/2022/09/08/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-2/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">插件开发日记---中土版饥饿游戏-2</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
     </div>
     <div class="widget-info">
       <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -174,6 +242,8 @@
     </div>
   </div>
 </section>
+
+      
 
       
 <section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -219,7 +289,6 @@
     </div>
   </article>
 </div>
-
 
     <!-- footer container -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
