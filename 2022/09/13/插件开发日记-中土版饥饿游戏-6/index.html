@@ -22,7 +22,7 @@
 
   
 
-  <title>数组 | 非洲阿楚的博客</title>
+  <title>插件开发日记---中土版饥饿游戏-6 | 非洲阿楚的博客</title>
 
   
 
@@ -45,7 +45,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/007kZ47kly1gfqx679y0rj30zk0n6amf.jpg)"></div>
+    <div class="post-image" style="background-image: url(https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/29842afd880511ebb6edd017c2d2eca2.jpg)"></div>
   
 
   <!-- navbar -->
@@ -96,18 +96,18 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">数组</h1>
+          <h1 class="title-wrap">插件开发日记---中土版饥饿游戏-6</h1>
           <h2 class="title-sub-wrap">
             <strong>lcxFZAC</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-08-13T14:00:11.000Z" itemprop="datePublished">2022-08-13</time>
+            <time  class="article-date" datetime="2022-09-13T02:18:16.000Z" itemprop="datePublished">2022-09-13</time>
           </h2>
           <ul class="wrap-list dark">
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/JAVA/">🏷️ JAVA</a></li>
+    <li><a href="/tags/%E9%97%B2%E6%9A%87%E5%AD%A6%E4%B9%A0/">🏷️ 闲暇学习</a></li>
   
 </ul>
         </div>
@@ -133,59 +133,44 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>数组(array)是一种用于存储多个同类型数据的存储模型。</p>
-<h3 id="数组的定义格式"><a href="#数组的定义格式" class="headerlink" title="数组的定义格式"></a>数组的定义格式</h3><p>格式一:数据类型 [ ] 变量名</p>
-<p>格式二:数据类型 变量名[ ]</p>
-<p>推荐使用格式一进行定义</p>
-<h2 id="数组的动态初始化"><a href="#数组的动态初始化" class="headerlink" title="数组的动态初始化"></a>数组的动态初始化</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>JAVA中的数组必须先初始化才能使用</p>
-<p>初始化—为数组中的数组元素分配内存空间，并为数组中每个数组元素赋值</p>
-<h3 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h3><p>动态初始化:初始化时只指定数组长度，由系统分配数组初始值</p>
-<p>格式: 数据类型 [ ] 变量名 = new 数据类型[数组长度];</p>
-<h2 id="数组的静态初始化"><a href="#数组的静态初始化" class="headerlink" title="数组的静态初始化"></a>数组的静态初始化</h2><h3 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h3><p>初始化时指定每个数组元素的初始值，由系统决定数组长度。</p>
-<h3 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h3><p>数据类型 [ ] 变量名 = new 数据类型[ ] {数据1,数据2,数据3};</p>
-<h3 id="简化格式"><a href="#简化格式" class="headerlink" title="简化格式"></a>简化格式</h3><p>数据类型 [ ] 变量名 = {数据1,数据2,数据3};</p>
-<h2 id="数组元素访问"><a href="#数组元素访问" class="headerlink" title="数组元素访问"></a>数组元素访问</h2><h3 id="方式-1"><a href="#方式-1" class="headerlink" title="方式"></a>方式</h3><p>数组访问方式—-格式:数组名</p>
-<p>数组内元素的访问方式—格式:数组名[索引]</p>
-<p>注意:数组中索引从0开始计算</p>
-<h2 id="内存分配"><a href="#内存分配" class="headerlink" title="内存分配"></a>内存分配</h2><p>JAVA程序在运行时，需在内存中分配空间，为了提高运行效率，会对空间进行区域划分，并对每片区域有特点的处理数据方式和内存管理方式。</p>
-<p>详细讲解(黑马程序员JAVA教程):<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18J411W7cE?p=61&amp;vd_source=a789e29fce38ea583e9a200db46a7a77">https://www.bilibili.com/video/BV18J411W7cE?p=61&amp;vd_source=a789e29fce38ea583e9a200db46a7a77</a></p>
-<h3 id="栈内存"><a href="#栈内存" class="headerlink" title="栈内存"></a>栈内存</h3><p>存储局部变量</p>
-<p>定义在方法中的变量</p>
-<p>使用完毕时会立刻消失</p>
-<h3 id="堆内存"><a href="#堆内存" class="headerlink" title="堆内存"></a>堆内存</h3><p>存储new出来的内容(实体、对象)</p>
-<p>数组初始化时会为储存空间添加默认值</p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>初始值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>整数</td>
-<td>0</td>
-</tr>
-<tr>
-<td>浮点数</td>
-<td>0.0</td>
-</tr>
-<tr>
-<td>布尔</td>
-<td>false</td>
-</tr>
-<tr>
-<td>字符</td>
-<td>空字符</td>
-</tr>
-<tr>
-<td>引用数据类型</td>
-<td>null</td>
-</tr>
-</tbody></table>
-<p>每new一个新东西都会给一个地址值</p>
-<p>使用完毕后在垃圾回收器空闲时被删除</p>
+        <h2 id="今日任务—继续建筑"><a href="#今日任务—继续建筑" class="headerlink" title="今日任务—继续建筑"></a>今日任务—继续建筑</h2><p>昨日干活干着干着顺手接了个单，赚了一顿晚餐钱，但是进度也变慢了，今天还是得继续肝啊。</p>
 <hr>
-<p><img src="/2022/08/13/%E6%95%B0%E7%BB%84-1/tp.jpg"></p>
+<h2 id="乌姆巴尔"><a href="#乌姆巴尔" class="headerlink" title="乌姆巴尔"></a>乌姆巴尔</h2><p>老样子翻地皮搞绿化</p>
+<p>乌姆巴尔的地面是以草地混沙地为主</p>
+<p>水中种些芦苇</p>
+<p>边缘弄成小型沙滩</p>
+<p>种上哈拉德地区特有的花卉</p>
+<p>杨树与柏木搭配混种</p>
+<p>用海盗帐篷和乌姆巴尔塔楼弄俩小型营地</p>
+<p>完事</p>
+<p><img src="/2022/09/13/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-6/wmbe.png"></p>
+<hr>
+<h2 id="哈拉德"><a href="#哈拉德" class="headerlink" title="哈拉德"></a>哈拉德</h2><p>非常简单</p>
+<p>地面转换成沙子</p>
+<p>放座金字塔</p>
+<p>。。。</p>
+<p>。。。</p>
+<p>。。。</p>
+<p><img src="/2022/09/13/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-6/jzt.png"></p>
+<p>好像有点大。。。</p>
+<p>超出范围了。。。</p>
+<p>没事，埋一下就好</p>
+<p><img src="/2022/09/13/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-6/m.png"></p>
+<p>凑合</p>
+<p>旁边的山。。。就放点半食人妖的建筑吧</p>
+<hr>
+<h2 id="洛汗"><a href="#洛汗" class="headerlink" title="洛汗"></a>洛汗</h2><p>嗯。。。很蛋疼。。。洛汗本该在迷雾山脉右边</p>
+<p>但是这个迷雾山脉画错了。。。</p>
+<p>只能取山脉下方中部了</p>
+<p>老样子搞绿化</p>
+<p>放几块巨石</p>
+<p>种些山毛榉和橡树</p>
+<p>放一座堡垒，周围一圈放瞭望塔</p>
+<p>完成</p>
+<p><img src="/2022/09/13/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-6/lh.png"></p>
+<hr>
+<p>今天先做这些，去复习物理去了</p>
+<p><img src="/2022/09/13/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-6/tp.jpg"></p>
 
       </section>
 
@@ -193,32 +178,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/007kZ47kgy1geim6fpq2cj30zk0n6afw.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2022/09/07/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F~1/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">插件开发日记---中土版饥饿游戏-1</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/007kZ47kly1gfqx69b85gj30zk0n6wpy.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/5af17f7f881b11ebb6edd017c2d2eca2.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2022/08/06/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CNPC%E8%84%9A%E6%9C%AC-%E7%94%BB%E4%B8%AA%E7%90%83/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">我的世界NPC脚本---画个球</h2>
+        <a href="/2022/09/12/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-%E4%B8%AD%E5%9C%9F%E7%89%88%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F-5/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">插件开发日记---中土版饥饿游戏-5</h2>
         </a>
       
       <div class="card-text--row">Older</div>
