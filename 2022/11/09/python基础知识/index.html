@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <meta name="generator" content="Hexo 5.4.0">
+
+  
+
+  
+
+  
+    <meta name="author" content="lcxFZAC">
+  
+
+  
+
+  
+
+  <title>python基础知识 | 非洲阿楚的博客</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/oh.ico">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/01772-1981261181-✋, Upper body, dramatic angle, female focus, Beijing Opera, (with arms behind), gorgeous Hanfu, wide sleeves, ((1 girl, Chinese.png)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          非洲阿楚的博客
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a target="_blank" rel="noopener" href="http://www.wsyu.edu.cn/">首义官网</a></li>
+        
+          <li class="navbar-list-item"><a target="_blank" rel="noopener" href="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/1660741292288.jpg">赞助(支付宝)</a></li>
+        
+          <li class="navbar-list-item"><a target="_blank" rel="noopener" href="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/mm_facetoface_collect_qrcode_1660741322112.png">赞助(微信)</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">python基础知识</h1>
+          <h2 class="title-sub-wrap">
+            <strong>lcxFZAC</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2022-11-09T06:17:40.000Z" itemprop="datePublished">2022-11-09</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/Python/">🏷️ Python</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h1 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h1><h2 id="变量名声明规则"><a href="#变量名声明规则" class="headerlink" title="变量名声明规则"></a>变量名声明规则</h2><p>在python中，创建变量时，需要注意以下几点</p>
+<p>1.由字母、数字、下划线组成，首位不能是数字</p>
+<p>2.不能使用关键字作为变量名</p>
+<p>3.下划线不能随意使用</p>
+<p>4.严格区分大小写</p>
+<h2 id="常见数据类型"><a href="#常见数据类型" class="headerlink" title="常见数据类型"></a>常见数据类型</h2><table>
+<thead>
+<tr>
+<th>类型名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int</td>
+<td>整数</td>
+</tr>
+<tr>
+<td>float</td>
+<td>浮点数</td>
+</tr>
+<tr>
+<td>str</td>
+<td>字符串</td>
+</tr>
+<tr>
+<td>complex</td>
+<td>复数</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>布尔值</td>
+</tr>
+</tbody></table>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><table>
+<thead>
+<tr>
+<th>算术运算符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>加</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取余</td>
+</tr>
+<tr>
+<td>**</td>
+<td>幂次</td>
+</tr>
+<tr>
+<td>//</td>
+<td>返回商数</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>比较运算符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>==</td>
+<td>相等</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>不相等</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于等于</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于等于</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>赋值运算符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=</td>
+<td>直接赋值</td>
+</tr>
+<tr>
+<td>+=</td>
+<td>相加后赋值</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>相减后赋值</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>相乘后赋值</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>相除后赋值</td>
+</tr>
+<tr>
+<td>**=</td>
+<td>乘以幂次后赋值</td>
+</tr>
+<tr>
+<td>//=</td>
+<td>取商后赋值</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>逻辑与算符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td>且</td>
+</tr>
+<tr>
+<td>or</td>
+<td>或</td>
+</tr>
+<tr>
+<td>not</td>
+<td>非</td>
+</tr>
+</tbody></table>
+<h2 id="切片操作"><a href="#切片操作" class="headerlink" title="切片操作"></a>切片操作</h2><h3 id="切片-a-b"><a href="#切片-a-b" class="headerlink" title="切片:[a,b)"></a>切片:[a,b)</h3><p>从第a个开始取到第b个，左闭右开。</p>
+<h3 id="步长"><a href="#步长" class="headerlink" title="步长"></a>步长</h3><p>每隔几个取一个</p>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">msg = <span class="string">&#x27;abcdefg&#x27;</span>  <span class="comment">#python中字符串可以使用单引号&#x27;&#x27;包围，也可以使用双引号&quot;&quot;包围，但不能一边单引号一边双引号</span></span><br><span class="line"><span class="built_in">print</span>(msg[<span class="number">0</span>:<span class="number">5</span>])</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109143023574.png" alt="image-20221109143023574"></p>
+<p>切片时步长为2，则每两个取第一个</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">msg = <span class="string">&#x27;abcdefg&#x27;</span>  </span><br><span class="line"><span class="built_in">print</span>(msg[<span class="number">0</span>:<span class="number">5</span>:<span class="number">2</span>])  <span class="comment">#从第0个元素开始到第4个元素(左闭右开)，每两个取第一个</span></span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109143510114.png" alt="image-20221109143510114"></p>
+<h3 id="format"><a href="#format" class="headerlink" title="format"></a>format</h3><p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;fafss&#123;&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">222</span>))</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109145134269.png" alt="image-20221109145134269"></p>
+<p>将变量插入字符串时，则</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="string">&#x27;aaa&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;fafss&#123;&#125;&quot;</span>.<span class="built_in">format</span>(a))</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109145316425.png" alt="image-20221109145316425"></p>
+<h2 id="控制结构"><a href="#控制结构" class="headerlink" title="控制结构"></a>控制结构</h2><p>在Python中，选择结构有if语句</p>
+<h3 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h3><p>使用方法:</p>
+<p>if (判断表达式):</p>
+<p>​    代码块</p>
+<p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">100</span></span><br><span class="line"><span class="keyword">if</span>(num &gt;<span class="number">10</span>):</span><br><span class="line">    <span class="built_in">print</span>(num)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109143942455.png" alt="image-20221109143942455"></p>
+<p>加上else并稍微修改判断条件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">100</span></span><br><span class="line"><span class="keyword">if</span>(num &lt; <span class="number">10</span>):</span><br><span class="line">    <span class="built_in">print</span>(num)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;error&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109144101579.png" alt="image-20221109144101579"></p>
+<p>python中，else if被简化成了elif</p>
+<p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">100</span></span><br><span class="line"><span class="keyword">if</span>(num &lt; <span class="number">100</span>):</span><br><span class="line">    <span class="built_in">print</span>(num)</span><br><span class="line"><span class="keyword">elif</span>(num == <span class="number">100</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;num就是100&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;error&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109144329109.png" alt="image-20221109144329109"></p>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><p>在python中，需要特别注意缩进，因为python完全依靠缩进区分代码块</p>
+<p>python中没有switch语句</p>
+<h2 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h2><h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><p>使用方法</p>
+<p>for 变量名 in 范围:</p>
+<p>​    代码块</p>
+<p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>):  <span class="comment">#range限制了范围从1到4(左闭右开),也可以用数组之类的数据集代替，详细看下面的序列类型</span></span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109144725079.png" alt="image-20221109144725079"></p>
+<h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><p>使用方法:</p>
+<p>while(判断表达式):</p>
+<p>​    代码块</p>
+<p>例如</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">n = 1</span><br><span class="line">while(n&lt;5):</span><br><span class="line">	print(n)</span><br><span class="line">	n+=1</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109150628115.png" alt="image-20221109150628115"></p>
+<h3 id="do-while"><a href="#do-while" class="headerlink" title="do while"></a>do while</h3><p>与while语句类似,区别在于do while先执行后判断</p>
+<h3 id="break"><a href="#break" class="headerlink" title="break"></a>break</h3><p>用于结束语句所在层循环</p>
+<h3 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h3><p>用于跳过该次循环，注意是”次”</p>
+<h2 id="序列类型"><a href="#序列类型" class="headerlink" title="序列类型"></a>序列类型</h2><h2 id="列表-可变-—List"><a href="#列表-可变-—List" class="headerlink" title="列表(可变)—List"></a>列表(可变)—List</h2><p>列表的生成举例</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109152403059.png" alt="image-20221109152403059"></p>
+<p>使用列表索引举例</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="built_in">print</span>(l[<span class="number">5</span>])  <span class="comment">#需要注意python中列表下标从0开始,列表的最大下标=长度-1</span></span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109152552741.png" alt="image-20221109152552741"></p>
+<p>len函数计算列表长度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;该数组长度为&#x27;</span>+<span class="built_in">str</span>(<span class="built_in">len</span>(l)))  <span class="comment">#拼接数据类型不同的数据时，需要转换成统一的数据类型</span></span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109152840069.png" alt="image-20221109152840069"></p>
+<p>切片操作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="built_in">print</span>(l[<span class="number">1</span>:<span class="number">5</span>])   <span class="comment">#打印下标为1到下标为4的元素</span></span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109153118876.png" alt="image-20221109153118876"></p>
+<p>加上步长操作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="built_in">print</span>(l[<span class="number">1</span>:<span class="number">5</span>:<span class="number">2</span>])</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109153225504.png" alt="image-20221109153225504"></p>
+<p>append()函数</p>
+<p>用于在列表尾部添加元素</p>
+<p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="built_in">print</span>(l)</span><br><span class="line">l.append(<span class="number">9</span>)</span><br><span class="line"><span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109153421330.png" alt="image-20221109153421330"></p>
+<p>成员资格</p>
+<p>使用in来判断一个元素是否在其之中</p>
+<p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="number">1</span> <span class="keyword">in</span> l)</span><br><span class="line"><span class="built_in">print</span>(<span class="number">0</span> <span class="keyword">in</span> l)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109154001478.png" alt="image-20221109154001478"></p>
+<p>extend()函数</p>
+<p>用于拼接列表</p>
+<p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="built_in">print</span>(l)</span><br><span class="line">l.extend([<span class="number">9</span>,<span class="number">9</span>,<span class="number">6</span>])</span><br><span class="line"><span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109153603313.png" alt="image-20221109153603313"></p>
+<p>max()和min()函数</p>
+<p>最大最小函数，功能如字面意思，寻找列表中最大/小值</p>
+<p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">564</span>,<span class="number">342</span>,<span class="number">52</span>,<span class="number">134</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">max</span>(l))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">min</span>(l))</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109154428276.png" alt="image-20221109154428276"></p>
+<h3 id="列表生成的几种写法"><a href="#列表生成的几种写法" class="headerlink" title="列表生成的几种写法"></a>列表生成的几种写法</h3><p>方法一</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="string">&#x27;&#x27;</span>]*<span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109161819612.png" alt="image-20221109161819612"></p>
+<p>该写法非常死板，不建议使用</p>
+<p>方法二</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>)]</span><br><span class="line"><span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109161517856.png" alt="image-20221109161517856"></p>
+<p>该写法较为死板，不适用于多种类型的数据</p>
+<p>但是可以与format配合使用</p>
+<p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="string">&quot;学生&#123;&#125;&quot;</span>.<span class="built_in">format</span>(i) <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>)]</span><br><span class="line"><span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109162028551.png" alt="image-20221109162028551"></p>
+<h2 id="元组-不可变-—tuple"><a href="#元组-不可变-—tuple" class="headerlink" title="元组(不可变)—tuple"></a>元组(不可变)—tuple</h2><p>元组的生成与列表类似，只是把[ ]改成了( )</p>
+<p>在此不再赘述</p>
+<hr>
+<p>push()函数</p>
+<p>用于放入元素，放入尾部</p>
+<p>pop()函数</p>
+<p>推出一个元素，谁最后进谁第一个出，用于删除元素</p>
+<hr>
+<p>元组中的元素不可改变,但可以改变元组中的列表中的元素</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">l = ([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>])</span><br><span class="line"><span class="built_in">print</span>(l)</span><br><span class="line">l[<span class="number">0</span>][<span class="number">1</span>] = <span class="number">100</span></span><br><span class="line"><span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109163024887.png" alt="image-20221109163024887"></p>
+<h2 id="字典-可变-—dict"><a href="#字典-可变-—dict" class="headerlink" title="字典(可变)—dict"></a>字典(可变)—dict</h2><h3 id="字典的特点"><a href="#字典的特点" class="headerlink" title="字典的特点"></a>字典的特点</h3><p>字典中存储的是键值对，也就是value:key的形式</p>
+<p>但需要注意，键必须是不可变数据类型(例如数字、字符串、元组、布尔值)，且不可重复</p>
+<h3 id="字典的生成举例"><a href="#字典的生成举例" class="headerlink" title="字典的生成举例"></a>字典的生成举例</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dict1 = &#123;<span class="string">&#x27;1号&#x27;</span>:<span class="string">&#x27;张江&#x27;</span>,<span class="string">&#x27;2号&#x27;</span>:<span class="string">&#x27;大数据&#x27;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(dict1)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109164417387.png" alt="image-20221109164417387"></p>
+<h3 id="字典的使用举例"><a href="#字典的使用举例" class="headerlink" title="字典的使用举例"></a>字典的使用举例</h3><p>查找方法如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dict1 = &#123;<span class="string">&#x27;1号&#x27;</span>:<span class="string">&#x27;张江&#x27;</span>,<span class="string">&#x27;2号&#x27;</span>:<span class="string">&#x27;大数据&#x27;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(dict1[<span class="string">&#x27;1号&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109164901370.png" alt="image-20221109164901370"></p>
+<p>此方法有一个缺点，那就是如果没有对应的key，会报错</p>
+<p>若不确定key是否存在，使用get() 函数更为合适</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dict1 = &#123;<span class="string">&#x27;1号&#x27;</span>:<span class="string">&#x27;张江&#x27;</span>,<span class="string">&#x27;2号&#x27;</span>:<span class="string">&#x27;大数据&#x27;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(dict1.get(<span class="string">&#x27;1号&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+<p>运行结果同上</p>
+<hr>
+<p>修改方法如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dict1 = &#123;<span class="string">&#x27;1号&#x27;</span>:<span class="string">&#x27;张江&#x27;</span>,<span class="string">&#x27;2号&#x27;</span>:<span class="string">&#x27;大数据&#x27;</span>&#125;</span><br><span class="line">dict1[<span class="string">&#x27;1号&#x27;</span>] = <span class="string">&#x27;地方&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(dict1[<span class="string">&#x27;1号&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109165255107.png" alt="image-20221109165255107"></p>
+<hr>
+<p>删除操作如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dict1 = &#123;<span class="string">&#x27;1号&#x27;</span>:<span class="string">&#x27;张江&#x27;</span>,<span class="string">&#x27;2号&#x27;</span>:<span class="string">&#x27;大数据&#x27;</span>,<span class="string">&#x27;3号&#x27;</span>:<span class="string">&#x27;jfsdad&#x27;</span>&#125;</span><br><span class="line">dict1.popitem()  <span class="comment">#相当于栈出</span></span><br><span class="line">dict1.pop(<span class="string">&#x27;1号&#x27;</span>)  <span class="comment">#删除指定key的键值对</span></span><br><span class="line"><span class="built_in">print</span>(dict1)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109165609908.png" alt="image-20221109165609908"></p>
+<hr>
+<p>遍历操作如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dict1 = &#123;<span class="string">&#x27;1号&#x27;</span>:<span class="string">&#x27;张江&#x27;</span>,<span class="string">&#x27;2号&#x27;</span>:<span class="string">&#x27;大数据&#x27;</span>,<span class="string">&#x27;3号&#x27;</span>:<span class="string">&#x27;jfsdad&#x27;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(dict1.keys())  <span class="comment">#打印所有的键</span></span><br><span class="line"><span class="built_in">print</span>(dict1.values())  <span class="comment">#打印所有的值</span></span><br><span class="line"><span class="built_in">print</span>(dict1.items())  <span class="comment">#打印所有项(键值对)</span></span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109170129422.png" alt="image-20221109170129422"></p>
+<hr>
+<p>快速生成字典的方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">key_list = [<span class="string">&#x27;a1&#x27;</span>,<span class="string">&#x27;b2&#x27;</span>,<span class="string">&#x27;c3&#x27;</span>,<span class="string">&#x27;d4&#x27;</span>]</span><br><span class="line">dict1 = <span class="built_in">dict</span>.fromkeys(key_list)</span><br><span class="line"><span class="built_in">print</span>(dict1)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109171148801.png" alt="image-20221109171148801"></p>
+<p>这样就创建了一个空值字典</p>
+<h2 id="range"><a href="#range" class="headerlink" title="range"></a>range</h2><p>range也是一种类型，它是一个不可变的数字序列，通常用在for循环中</p>
+<p>举例说明</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10</span>)))  <span class="comment">#使用序列生成器生成一个1到9的数组</span></span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109152124824.png" alt="image-20221109152124824"></p>
+<h2 id="小练习"><a href="#小练习" class="headerlink" title="小练习"></a>小练习</h2><p>九九乘法表</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> a <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10</span>):</span><br><span class="line">    <span class="keyword">for</span> b <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,a+<span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;&#123;&#125;*&#123;&#125;=&#123;&#125;&quot;</span>.<span class="built_in">format</span>(b,a,a*b),end=<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        <span class="keyword">if</span>(a == b):</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109154528109.png" alt="image-20221109154528109"></p>
+<h2 id="思维导图笔记"><a href="#思维导图笔记" class="headerlink" title="思维导图笔记"></a>思维导图笔记</h2><p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20221109151147529.png" alt="image-20221109151147529"></p>
+
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/01529-4168586196-((masterpiece)),(((best quality))), ((ultra-detailed)), (((Chinese style))), (((1girl))), (longhair), ((disheveled hair)), (impl.png"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2022/11/16/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">数据分析</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/01642-2877501299-🖐, (((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), ((an extremely delicate and beautiful)),dynamic an.png"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2022/11/08/%E7%BA%BF%E6%80%A7%E8%A1%A8/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">线性表</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="http://game.people.com.cn/NMediaFile/2015/0304/MAIN201503040912000114062315905.jpg" class="soft-size--round soft-style--box" alt="非洲阿楚">
+    
+    
+      <h2>非洲阿楚</h2>
+    
+    
+      <p>要多读书，但不要读太多的书。</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>37</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        0
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        8
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+<section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 945.02305225v28.15620663a24.27259221 24.27259221 0 0 1-24.27259221 24.27259335H394.0352a48.54518557 48.54518557 0 0 1-41.74885888-23.78714112l-110.68302222-184.47170332a132.04290333 132.04290333 0 0 1-17.47626667-48.54518557h118.4502511a200.97706667 200.97706667 0 0 1 76.21594113 14.56355556l20.38897777 133.49925888a48.54518557 48.54518557 0 0 0 36.40888888 27.67075555l16.01991111 2.91271112a24.27259221 24.27259221 0 0 1 20.38897778 25.72894889zM997.45185223 463.45481443a194.18074112 194.18074112 0 0 1-38.8361489 116.50844445 24.75804445 24.75804445 0 0 1-36.4088889 0l-34.95253333-34.95253333a24.27259221 24.27259221 0 0 1-2.91271111-30.58346667 97.09036999 97.09036999 0 0 0 0-106.79940665 24.27259221 24.27259221 0 0 1 2.91271111-30.58346666l34.95253333-34.95253334a24.75804445 24.75804445 0 0 1 18.93262223-7.28177777 26.2144 26.2144 0 0 1 17.47626667 9.70903665A194.18074112 194.18074112 0 0 1 997.45185223 463.45481443z m-194.18074112-388.36148111v776.72296335a48.54518557 48.54518557 0 0 1-48.54518556 48.54518443h-28.64165888a48.54518557 48.54518557 0 0 1-33.98163001-14.07810332l-145.63555556-143.20829668A291.27111111 291.27111111 0 0 0 342.57730333 657.63555556H172.18370333a145.63555556 145.63555556 0 0 1-145.63555556-145.63555556v-97.09036999a145.63555556 145.63555556 0 0 1 145.63555556-145.63555556h170.3936a291.27111111 291.27111111 0 0 0 206.31703779-85.43952668l145.63555555-143.20829554a48.54518557 48.54518557 0 0 1 33.98162888-14.07810446H754.72592555a48.54518557 48.54518557 0 0 1 48.54518556 48.54518555z" fill="currentColor"></path>
+</svg>
+    <span>NOTICE</span>
+  </div>
+  <div class="widget-body">
+    <p>有事联系1193834926@qq.com</p>
+  </div>
+</section>
+
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/C/" style="font-size: 10px;" class="tags-cloud-0">C</a> <a href="/tags/JAVA/" style="font-size: 12.5px;" class="tags-cloud-3">JAVA</a> <a href="/tags/JavaScript/" style="font-size: 10px;" class="tags-cloud-0">JavaScript</a> <a href="/tags/Python/" style="font-size: 17.5px;" class="tags-cloud-8">Python</a> <a href="/tags/hexo/" style="font-size: 10px;" class="tags-cloud-0">hexo</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 10px;" class="tags-cloud-0">数据结构</a> <a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/" style="font-size: 15px;" class="tags-cloud-5">课堂笔记</a> <a href="/tags/%E9%97%B2%E6%9A%87%E5%AD%A6%E4%B9%A0/" style="font-size: 20px;" class="tags-cloud-10">闲暇学习</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<footer id="footer" class="footer">
+  
+ 
+
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/miiiku/" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+          <a href="https://twitter.com/guanquanhong" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-twitter" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M962.285714 233.142857q-38.285714 56-92.571429 95.428571 0.571429 8 0.571429 24 0 74.285714-21.714286 148.285714t-66 142-105.428571 120.285714-147.428571 83.428571-184.571429 31.142857q-154.857143 0-283.428571-82.857143 20 2.285714 44.571429 2.285714 128.571429 0 229.142857-78.857143-60-1.142857-107.428571-36.857143t-65.142857-91.142857q18.857143 2.857143 34.857143 2.857143 24.571429 0 48.571429-6.285714-64-13.142857-106-63.714286t-42-117.428571l0-2.285714q38.857143 21.714286 83.428571 23.428571-37.714286-25.142857-60-65.714286t-22.285714-88q0-50.285714 25.142857-93.142857 69.142857 85.142857 168.285714 136.285714t212.285714 56.857143q-4.571429-21.714286-4.571429-42.285714 0-76.571429 54-130.571429t130.571429-54q80 0 134.857143 58.285714 62.285714-12 117.142857-44.571429-21.142857 65.714286-81.142857 101.714286 53.142857-5.714286 106.285714-28.571429z"></path>
+</svg>
+          </a>
+        
+      
+    </div>
+     
+    <p>&copy; 2022 <a href="/" target="_blank">lcxFZAC</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+
+    <p>友链：<a target="_blank" rel="noopener" href="https://dyingChinese.github.io">龙华的博客</a></p>
+ 
+
+    <span id="busuanzi_container_site_uv"> 
+      本站访客数<span id="busuanzi_value_site_uv"></span>人次 </span> 
+
+
+</div>
+
+</footer>
+
+
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>
