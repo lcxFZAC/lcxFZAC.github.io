@@ -130,10 +130,10 @@
     <div class="article-info">
       
         
-          
                 
                   <section
                     class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+                    
                     <h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><p>定义：正则表达式是一个特殊的字符序列<br>作用：检测一个字符串是否符合我们所设定的条件<br>正则表达式的灵魂在于“规则”。<br>正则表达式由元字符组成,例如’/n’<br>常量表达式由普通字符组成，例如’python’<br>每种元字符都有其自身的意义，详细请百度</p>
 <h2 id="Python中如何使用正则表达式"><a href="#Python中如何使用正则表达式" class="headerlink" title="Python中如何使用正则表达式"></a>Python中如何使用正则表达式</h2><p>在Python中，有re模块<br>其中包含了许多正则表达式<br>用import re引用即可<br>例如:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import re</span><br><span class="line"></span><br><span class="line">str = &#x27;a,b,c,d,e&#x27;</span><br><span class="line">re.findall(&#x27;pattern&#x27;,str)  #格式为re.findall(&#x27;正则表达式&#x27;,要检测的字符串，模式)</span><br></pre></td></tr></table></figure>
