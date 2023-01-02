@@ -205,6 +205,7 @@ body {
 ol,
 ul {
   list-style: none;
+  list-style-type: none;
 }
 blockquote,
 q {
@@ -227,6 +228,7 @@ img {
 a {
   background-color: transparent;
   text-decoration: none;
+  list-style-type: none;
   color: inherit;
 }
 a:active,
@@ -824,30 +826,32 @@ html.show-mobile-nav .navbar-list {
   transition: border-color 0.3s ease;
 }
 .markdown-body a {
+  list-style: none;
+  list-style-type: none;
   text-decoration: none;
+  text-decoration-line: none;
   word-break: break-all;
-  border-bottom: 2px solid #dde0e0;
   transition: border 0.3s ease;
-  color: var(--theme-text-active);
+  color: #d7dfe6;
+  font-size: 16px;
 }
 .markdown-body a:hover {
   border-color: var(--theme-text-active);
 }
 .markdown-body ul,
-.markdown-body ol,
-.markdown-body dl {
-  margin-top: 1.6em;
-  margin-bottom: 1.6em;
-}
-.markdown-body ul,
 .markdown-body ol {
   padding-left: 2em;
+  list-style: none;
 }
 .markdown-body ul {
-  list-style-type: disc;
+  list-style: none;
+  text-decoration-line: none;
+  list-style-type: none;
 }
 .markdown-body ol {
-  list-style-type: decimal;
+  list-style: none;
+  text-decoration-line: none;
+  list-style-type: none;
 }
 .markdown-body img,
 .markdown-body video {
@@ -1148,7 +1152,9 @@ html.show-mobile-nav .navbar-list {
   color: var(--theme-text-primary);
 }
 .content-container.post-container .widget-info .widget-toc .widget-body ol > li > a {
-  color: var(--theme-text-primary);
+  list-style: none;
+  color: #d7dfe6;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 .content-container.post-container .widget-info .widget-toc .widget-body ol > li > a:hover {
