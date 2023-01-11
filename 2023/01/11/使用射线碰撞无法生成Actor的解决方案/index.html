@@ -22,7 +22,7 @@
 
   
 
-  <title>lesson10 | 非洲阿楚的博客</title>
+  <title>使用射线碰撞无法生成Actor的解决方案 | 非洲阿楚的博客</title>
 
   
 
@@ -45,7 +45,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://tva1.sinaimg.cn/large/007kZ47kgy1geim6fabvej30zk0n6grt.jpg)"></div>
+    <div class="post-image" style="background-image: url(https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/01415.png)"></div>
   
 
   <!-- navbar -->
@@ -96,18 +96,18 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">lesson10</h1>
+          <h1 class="title-wrap">使用射线碰撞无法生成Actor的解决方案</h1>
           <h2 class="title-sub-wrap">
             <strong>lcxFZAC</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-01-06T06:13:14.000Z" itemprop="datePublished">2022-01-06</time>
+            <time  class="article-date" datetime="2023-01-11T07:23:06.000Z" itemprop="datePublished">2023-01-11</time>
           </h2>
           <ul class="wrap-list dark">
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/">🏷️ 课堂笔记</a></li>
+    <li><a href="/tags/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/">🏷️ 问题记录</a></li>
   
 </ul>
         </div>
@@ -134,9 +134,20 @@
                   <section
                     class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
                     
-                    <h1 id="用js制作加载进度条"><a href="#用js制作加载进度条" class="headerlink" title="用js制作加载进度条"></a>用js制作加载进度条</h1><h2 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h2><p>用两个div来表现进度条<br>一个作为框<br>一个作为加载条<br>利用js让加载条根据进度改变长度<br>从而实现加载进度条的效果</p>
-<h2 id="过程要点分析"><a href="#过程要点分析" class="headerlink" title="过程要点分析"></a>过程要点分析</h2><p>先用div做出条和框<br>再做一个按钮绑定js点击事件<br>js获取框长，条长，百分比三个元素<br>设置定时器<br>根据百分比改变进度条长度<br>利用if语句判断使百分比在达到100%前自增<br>同时限制条长度不会溢出加载框</p>
-<p><img src="/2022/01/06/lesson10/tp10.gif" alt="tp"></p>
+                    <h1 id="使用射线碰撞无法生成Actor的解决方案"><a href="#使用射线碰撞无法生成Actor的解决方案" class="headerlink" title="使用射线碰撞无法生成Actor的解决方案"></a>使用射线碰撞无法生成Actor的解决方案</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>事情是这样的，在制作UI拖拽生成actor时，我发现射线有碰撞到地板，但是并没有生成actor，非常好奇是什么原因。于是反复测试，发现当射线碰撞在某些静态网格体时，可以生成actor，但是碰撞在地板时，无法生成actor。</p>
+<h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>经过反复的测试，发现并非不能生成actor，而是生成actor的默认方式判定在碰撞到地板时获取到的坐标无法生成actor，尝试固定生成后，actor虽然生成了，但是由于生成坐标的高度问题，直接穿过地板掉了下去。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>修改生成方式为”尝试调整位置，如仍然碰撞则不生成”，将获取到的坐标的Z坐标增大，防止高度错误导致生成不了actor或生成后actor穿过地板往下掉。</p>
+<h2 id="蓝图修改"><a href="#蓝图修改" class="headerlink" title="蓝图修改"></a>蓝图修改</h2><p>一开始的蓝图(参考教程:<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mU4y117z9/?spm_id_from=333.788.recommend_more_video.-1&amp;vd_source=a789e29fce38ea583e9a200db46a7a77">https://www.bilibili.com/video/BV1mU4y117z9/?spm_id_from=333.788.recommend_more_video.-1&amp;vd_source=a789e29fce38ea583e9a200db46a7a77</a>)</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20230111152959519.png" alt="image-20230111152959519"></p>
+<p>修改后的蓝图</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20230111153109346.png" alt="image-20230111153109346"></p>
+<p>变化一(修改生成方式并将Z坐标增大，以免生成不了或生成后掉落)</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20230111153645627.png" alt="image-20230111153645627"></p>
+<p>变化二(获取AI控制器)</p>
+<p>其实这个问题是顺便解决的，主要是生成后的AI不执行行为树，排查了一下发现spawn节点生成的actor需要获取AI控制器才能作为AI运行。</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20230111153832477.png" alt="image-20230111153832477"></p>
+<hr>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/image-20230111153911861.png" alt="image-20230111153911861"></p>
 
                   </section>
 
@@ -144,34 +155,16 @@
                     
                       <nav class="article-nav">
                         
-                          <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://tva1.sinaimg.cn/large/007kZ47kly1gghctbifctj30zk0n6b29.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2022/02/06/%E5%88%9D%E5%AD%A6scala%E8%AF%AD%E8%A8%80/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">初学scala语言</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-
-
-                            
                               
                                 <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://tvax3.sinaimg.cn/large/007kZ47kgy1geim6epv26j30zk0n6gyh.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/54245936/L/01855.png"></div>
     
     <div class="card-text">
       
-        <a href="/2022/01/06/lesson9/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">lesson9</h2>
+        <a href="/2023/01/02/QT%E4%B9%8B%E7%AA%97%E5%8F%A3/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">QT之窗口</h2>
         </a>
       
       <div class="card-text--row">Older</div>
